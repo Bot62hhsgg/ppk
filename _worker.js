@@ -1,12 +1,12 @@
 import { connect } from "cloudflare:sockets";
 
 // Variables
-const rootDomain = "narxz.biz.id"; // Ganti dengan domain utama kalian
-const serviceName = "nzr"; // Ganti dengan nama workers kalian
-const apiKey = "4170812bf1135f210a1851acf0c004285c796"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
-const apiEmail = "dinaroktaviandra52@gmail.com"; // Ganti dengan email yang kalian gunakan
-const accountID = "567ab458316945a8dbf036f0a5e87297"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
-const zoneID = "b97e8731cd51ed4818eb0c27adc3c860"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const rootDomain = "ngalamder.my.id"; // Ganti dengan domain utama kalian
+const serviceName = "nxt"; // Ganti dengan nama workers kalian
+const apiKey = "36a0cd009af19e031e97b759611868df3bd0d"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
+const apiEmail = "dinaroktavian50@gmail.com"; // Ganti dengan email yang kalian gunakan
+const accountID = "f9d5c27a17caae87c9e9d659994cec71"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const zoneID = "6b7fc93295a9c6c6403dde7fe0833207"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 let isApiReady = false;
 let proxyIP = "";
 let cachedProxyList = [];
@@ -114,7 +114,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
     const document = new Document(request);
-    document.setTitle("<span class='text-indigo-500 font-semibold'>NARXZ-VPN-V4</span>");
+    document.setTitle("<span class='text-indigo-500 font-semibold'>NARXZ-VPN-V5</span>");
     document.addInfo(`Total: ${proxyList.length}`);
     document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
@@ -1459,7 +1459,6 @@ let baseHTML = `
 
       function checkRegion() {
         for (let i = 0; ; i++) {
-          console.log("Halo " + i)
           const containerRegionCheck = document.getElementById("container-region-check-" + i);
           const configSample = document.getElementById("config-sample-" + i).value.replaceAll("", "");
           if (containerRegionCheck == undefined) break;
