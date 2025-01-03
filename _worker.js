@@ -1221,7 +1221,7 @@ let baseHTML = `
     <footer>
       <div class="fixed bottom-3 right-3 flex flex-col gap-1 z-50">
         <a href="${DONATE_LINK}" target="_blank">
-          <button class="bg-green-500 rounded-full border-2 border-neutral-800 p-1 block">
+          <button class="bg-blue-500 rounded-full border-2 border-neutral-800 p-1 block">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z"/>
             </svg>
